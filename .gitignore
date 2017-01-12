@@ -1,0 +1,8 @@
+bower_components/
+node_modules/
+.DS_Store
+/secrets/
+/.htaccess
+/env.php
+wp-content/uploads
+/deploy/

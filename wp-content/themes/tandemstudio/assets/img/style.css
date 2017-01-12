@@ -1,0 +1,123 @@
+/*
+Theme Name: Tandem Studio
+Theme URI: https://tandem-studio.lt
+Author: Andrius Juskenas
+Author URI: https://tandem-studio.lt
+Description: Tandem Studio tema
+Version: 1.0
+License: komercine
+Text Domain: tstudio
+*/
+body { font-family: "Ubuntu", sans-serif; font-weight: 400; color: #4d4d4d; margin: 0; padding: 0; }
+
+a { text-decoration: none; }
+
+.kalbos { height: 40px; }
+
+.wrapper { max-width: 1100px; width: 100%; margin: 0 auto; }
+
+.wr2 { overflow: hidden; position: relative; }
+
+.logo { padding: 25px 12px 20px 12px; width: 72px; background: #000; }
+
+nav ul { padding: 0; margin: 0; float: right; }
+nav ul .current-menu-item { position: relative; }
+nav ul .current-menu-item:before { content: ""; position: absolute; width: 100%; background: #000; height: 5px; top: 0; left: 0; }
+nav ul .current-menu-item a { color: #000; }
+nav ul li { display: inline-block; font-size: 16px; text-transform: uppercase; margin-left: 10px; margin-right: 10px; padding: 12px 15px 12px 15px; }
+nav ul li a { text-decoration: none; color: #fff; font-weight: 300; -webkit-transition: color 0.3s ease; transition: color 0.3s ease; }
+nav ul li a:hover { color: #000; }
+
+#pasirinkimai { background: #000; width: 220px; max-width: 220px; position: relative; padding-top: 30px; }
+#pasirinkimai img { float: left; cursor: pointer; width: 100% !important; }
+
+.tandem { background: #000; width: 100%; max-width: 200px; padding: 30px 5px 45px 15px; position: absolute; z-index: 1; top: 0px; }
+.tandem:before { content: ""; width: 0; position: absolute; z-index: 9; height: 0; left: 0; top: 144px; border-left: 110px solid transparent; border-right: 110px solid transparent; border-top: 15px solid black; }
+.tandem span { text-transform: uppercase; color: #e6e6e6; text-align: center; width: 100%; left: 0; top: 120px; position: absolute; font-size: 14px; font-weight: 400; }
+.tandem span:before { content: ""; position: absolute; top: -15px; width: 80%; left: 0; height: 1px; margin-left: 10%; margin-right: 10%; background: #666666; }
+
+.pavadinimas { position: absolute; bottom: 0; width: 100%; max-width: 720px; margin-left: 50px; margin-right: 25px; }
+
+.pr_darbai { list-style: none; display: inline; }
+.pr_darbai .entry-title { text-align: right; font-size: 40px; font-weight: 600; text-transform: uppercase; }
+.pr_darbai .entry-title a { color: #808080; text-decoration: none; -webkit-transition: color 0.3s ease; transition: color 0.3s ease; }
+.pr_darbai .entry-title a:hover { color: #6e6e6e; }
+
+#juoda { background: #000; }
+
+#balta { background: #fff; padding-bottom: 40px; }
+
+#maxdudu { background: #000; width: 220px; max-width: 220px; text-align: right; color: #fff; font-size: 14px; text-transform: uppercase; font-weight: 400; }
+#maxdudu div { padding: 30px 10px 12px 0px; }
+#maxdudu div span { position: relative; }
+#maxdudu div span:before, #maxdudu div span:after { content: ""; background: #4d4d4d; width: 6px; height: 6px; position: absolute; right: -25px; border-radius: 50%; }
+#maxdudu div span:before { top: 0; }
+#maxdudu div span:after { bottom: 0; }
+
+.apaciosmeniu { display: table; padding: 28px 0px 15px 10px; }
+
+#visoskat { margin: 0; padding: 0; display: table-row; width: 100%; }
+#visoskat li { display: table-cell; width: 1%; list-style: none; font-weight: 400; font-size: 14px; }
+#visoskat li a { color: #4d4d4d; text-decoration: none; border-bottom: 1px solid #cccccc; -webkit-transition: border-color 0.3s ease; transition: border-color 0.3s ease; display: inline-block; line-height: 1.4; }
+#visoskat li a:hover { border-color: #4d4d4d; }
+
+@keyframes fadeino { from { opacity: 1; }
+  to { opacity: 0; } }
+/* Firefox < 16 */
+@-moz-keyframes fadeino { from { opacity: 1; }
+  to { opacity: 0; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeino { from { opacity: 1; }
+  to { opacity: 0; } }
+/* Internet Explorer */
+@-ms-keyframes fadeino { from { opacity: 1; }
+  to { opacity: 0; } }
+/* Opera < 12.1 */
+@-o-keyframes fadeino { from { opacity: 1; }
+  to { opacity: 0; } }
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+.bx-wrapper { position: absolute !important; top: 0; left: 0; z-index: -1; width: 100%; text-align: center; }
+.bx-wrapper .dsp { min-height: 1000px; }
+.bx-wrapper .anime { -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ -moz-animation: fadein 2s; /* Firefox < 16 */ -ms-animation: fadein 2s; /* Internet Explorer */ -o-animation: fadein 2s; /* Opera < 12.1 */ animation: fadein 2s; }
+.bx-wrapper .animene { -webkit-animation: fadeino 2s; /* Safari, Chrome and Opera > 12.1 */ -moz-animation: fadeino 2s; /* Firefox < 16 */ -ms-animation: fadeino 2s; /* Internet Explorer */ -o-animation: fadeino 2s; /* Opera < 12.1 */ animation: fadeino 2s; }
+
+.row:before, .row:after { content: ""; display: table; clear: both; }
+
+[class*='col-'] { float: left; min-height: 1px; width: 16.66%; }
+
+.col-1 { width: 8.33%; }
+
+.col-2 { width: 16.66%; }
+
+.col-3 { width: 25%; }
+
+.col-4 { width: 33.33%; }
+
+.col-5 { width: 41.66%; }
+
+.col-6 { width: 50%; }
+
+.col-7 { width: 58.33%; }
+
+.col-8 { width: 66.66%; }
+
+.col-9 { width: 75%; }
+
+.col-10 { width: 83.33%; }
+
+.col-11 { width: 91.66%; }
+
+.col-12 { width: 100%; }

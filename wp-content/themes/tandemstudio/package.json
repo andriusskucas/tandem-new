@@ -1,0 +1,33 @@
+{
+  "name": "main_tandem_theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tandem-studio@bitbucket.org/tandem-studio/real-terminal.git"
+  },
+  "keywords": [
+
+  ],
+  "author": "Andrius S. 868983632, sku.andrius\u001b\u0000@@gmail.com",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.2",
+    "gulp-minify": "0.0.14",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}

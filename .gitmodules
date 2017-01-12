@@ -1,0 +1,9 @@
+[submodule "wp"]
+	path = wp
+	url = git://github.com/WordPress/WordPress.git
+[submodule "wp-content/plugins/wp-migrate-db"]
+	path = wp-content/plugins/wp-migrate-db
+	url = https://github.com/wp-plugins/wp-migrate-db.git
+[submodule "wp-content/plugins/ACFPRO"]
+	path = wp-content/plugins/ACFPRO
+	url = https://github.com/wp-premium/advanced-custom-fields-pro.git

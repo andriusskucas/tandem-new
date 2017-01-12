@@ -1,0 +1,38 @@
+
+@mixin grid-col {
+  float: left;
+}
+
+@mixin populateColumns ($className, $colCount){
+    @for $i from 1 through $colCount{
+        .col-#{$className}-#{$i} {
+            @include grid-col;
+            width: 100% / $colCount * $i ;
+        }
+    }
+}
+
+.last-col {
+  float: right;
+  padding-right: 0 !important;
+}
+
+
+
+@media (max-width: 767px) {
+
+  @include populateColumns('small', 12);
+
+}
+
+@media (min-width: 768px) and (max-width: 1029px) {
+
+  @include populateColumns('medium', 12);
+
+}
+
+@media (min-width: 1030px) {
+
+  @include populateColumns('big', 12);
+
+}

@@ -1,0 +1,247 @@
+/********************************
+Buttons
+*********************************/
+
+.blue-btn {
+
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 4%);
+  } // end hover
+
+  &:active {
+    background-color: darken($blue, 5%);
+  } // end active
+
+} // end blue button
+
+
+.btn{
+    display: inline-block;
+    position: relative;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 1em;
+
+    &:before{
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 90%;
+        top: 50%;
+
+        display: block;
+
+        content: "";
+
+
+        border-bottom: solid 3px $black;
+        border-left: solid 3px $black;
+
+        animation: btn-hover-before-back .6s;
+        animation-fill-mode: forwards;
+    }
+
+    &:after{
+
+        position: absolute;
+        bottom: 50%;
+        left: 90%;
+        right: 0;
+        top: 0;
+
+        display: block;
+
+
+        content: "";
+
+
+        border-top: solid 3px $black;
+        border-right: solid 3px $black;
+
+        animation: btn-hover-after-back .6s;
+        animation-fill-mode: forwards;
+    }
+
+     &:hover, &:focus {
+
+
+                    &:before, &:after{
+                        opacity: 1;
+                    }
+
+                    &:before{
+
+                        animation: btn-hover-before .6s;
+                        animation-fill-mode: forwards;
+                    }
+
+                    &:after{
+                        animation: btn-hover-after .6s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+}
+
+@keyframes btn-hover-before{
+
+    0%{
+       bottom: 0;
+        left: 0;
+        right: 90%;
+        top: 50%;
+    }
+
+
+
+    50%{
+        bottom: 0;
+        left: 0;
+        top: calc(100% - 3px);
+        right: 0;
+        border-left: solid 3px $black;
+        border-right: none;
+    }
+
+    51%{
+        border-left: none;
+        border-right: solid 3px $black;
+    }
+
+
+
+    100%{
+        bottom: 0;
+        top: 60%;
+        left: 91%;
+        right: 0;
+        border-left: none;
+        border-right: solid 3px $black;
+    }
+}
+
+@keyframes btn-hover-before-back{
+
+
+    0%{
+        bottom: 0;
+        top: 60%;
+        left: 91%;
+        right: 0;
+        border-left: none;
+        border-right: solid 3px $black;
+    }
+
+
+
+
+    50%{
+        border-left: none;
+        border-right: solid 3px $black;
+    }
+
+    51%{
+        bottom: 0;
+        left: 0;
+        top: calc(100% - 3px);
+        right: 0;
+        border-left: solid 3px $black;
+        border-right: none;
+    }
+
+    100%{
+       bottom: 0;
+        left: 0;
+        right: 90%;
+        top: 50%;
+    }
+
+
+
+
+}
+
+@keyframes btn-hover-after{
+    0%{
+       bottom: 50%;
+        left: 90%;
+        right: 0;
+        top: 0;
+    }
+
+
+
+    50%{
+        bottom: calc(100% - 3px);
+        left: 0;
+        top: 0;
+        right: 0;
+        border-right: solid 3px $black;
+        border-left: none;
+    }
+
+    51%{
+        border-right: none;
+        border-left: solid 3px $black;
+    }
+
+
+
+    100%{
+        bottom: 60%;
+        top: 0;
+        left: 0;
+        right: 92%;
+        border-right: none;
+        border-left: solid 3px $black;
+    }
+
+}
+
+@keyframes btn-hover-after-back{
+
+    0%{
+        bottom: 60%;
+        top: 0;
+        left: 0;
+        right: 92%;
+        border-right: none;
+        border-left: solid 3px $black;
+    }
+
+    50%{
+        border-right: none;
+        border-left: solid 3px $black;
+    }
+
+
+    51%{
+        bottom: calc(100% - 3px);
+        left: 0;
+        top: 0;
+        right: 0;
+        border-right: solid 3px $black;
+        border-left: none;
+    }
+
+
+
+    100%{
+       bottom: 50%;
+        left: 90%;
+        right: 0;
+        top: 0;
+    }
+
+
+}
+

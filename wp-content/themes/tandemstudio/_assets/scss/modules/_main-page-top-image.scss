@@ -1,0 +1,43 @@
+.top-img-section{
+    position: relative;
+
+    margin-top: -1px;
+    padding-top: 1px;
+
+
+
+    background: url(../img/orlov-pattern.png);
+
+    min-height: 300px;
+
+}
+
+.top-img-title{
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding: 40px 20%;
+    margin: 0;
+
+    width: 100%;
+
+    color: $white;
+    font-size: (44 / 16) * 1em;;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.top-img-section__background{
+
+    margin-top: -3.5%;
+
+    img{
+        display: block;
+
+        width: 100%;
+    }
+}

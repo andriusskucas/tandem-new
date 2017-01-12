@@ -1,0 +1,28 @@
+.portfolio{
+    padding-bottom: 80px;
+}
+
+.portfolio-list-item{
+
+    position: relative;
+
+    &:before{
+        display: block;
+        content: "";
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    a{
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+
+        background: url(../img/sbg1.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
